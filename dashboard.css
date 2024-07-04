@@ -1,0 +1,236 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+    --primarycolor: hsl(179, 93%, 44%);
+    --blue: hsl(183, 100%, 35%);
+    --lightblue: hsl(183, 49%, 63%);
+    --secondarycolor: hsl(217, 10%, 25%);
+    --Backgroundcolor: hsl(216, 19%, 16%);
+    --white: hsl(0, 0%, 100%);
+    --darkishwhite: hsl(0, 0%, 78%);}
+body{
+  background:var(--secondarycolor);
+}
+.container{
+  display: flex;
+}
+nav{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background:var(--Backgroundcolor);
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  color: var(--primarycolor);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover{
+  background: var(--blue);
+  color: var(--white);
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+.content {
+  margin-left: 280px;}
+  nav {
+    position: fixed; /* Keep the navigation bar fixed */
+    top: 0;
+    bottom: 0;
+    height: 100vh; /* Full viewport height */
+    left: 0;
+    background: var(--Backgroundcolor);
+    width: 280px; /* Set the width of the navigation bar */
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Rest of your styles... */
+  
+
+/* Main Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+  color: var(--primarycolor);
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: var(--primarycolor);
+  cursor: pointer;
+}
+.main-skills{
+  display: flex;
+  margin-top: 20px;
+}
+.main-skills .card{
+  width: 25%;
+  margin: 10px;
+  background:var(--Backgroundcolor);
+  color: var(--primarycolor);
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card i{
+    color: var(--darkishwhite);
+}
+.main-skills .card h3{
+  margin: 10px;
+  text-transform: capitalize;
+
+}
+.main-skills .card h3:hover{
+  color: #fff;
+}
+.main-skills .card p{
+  font-size: 12px;
+}
+.main-skills .card button{
+  background: var(--blue);
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.main-skills .card button:hover{
+  background: var(--lightblue);
+}
+.main-skills .card i{
+  font-size: 22px;
+  padding: 10px;
+}
+
+/* Courses */
+.main-course{
+  margin-top:20px ;
+  text-transform: capitalize;
+}
+.main-course h1{
+    color: var(--primarycolor);
+}
+.course-box{
+  width: 100%;
+  height: 400px;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  background: var(--Backgroundcolor);
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.course-box ul{
+  list-style: none;
+  display: flex;
+}
+.course-box ul li{
+  margin: 10px;
+  color:var(--blue);
+  cursor: pointer;
+}
+.course-box ul .active{
+  color: var(--primarycolor);
+  border-bottom: 1px solid var(--blue);
+}
+.course-box .course{
+  display: flex;
+}
+.box{
+  width: 33%;
+  height: 300px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: var(--secondarycolor);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.box p{
+  font-size: 12px;
+  margin-top: 5px;
+  color: var(--blue);
+}
+.box h3{
+    color: var(--primarycolor);
+}
+.box button{
+  background:var(--blue);
+  color: #fff;
+  padding: 9px 12px;
+  border-radius: 10px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.box button:hover{
+  background: var(--lightblue);
+}
+.box i{
+  font-size: 7rem;
+  float: right;
+  margin: -20px 20px 20px 0;
+}
+.html{
+  color:var(--darkishwhite);;
+}
+.css{
+  color: var(--darkishwhite);
+}
+.js{
+  color: var(--darkishwhite);
+}
+  
